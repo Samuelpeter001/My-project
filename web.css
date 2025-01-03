@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    font-family: 'kumbh sans', sans-serif;
+}
+.navset {
+    background-color: black;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    top: 0;
+    position: sticky;
+    z-index: 999;
+}
+.Samuel {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+#Pzion {
+    background-color: blueviolet;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.fa-gem{
+    margin-right: 0.2rem;
+}
+.menu_tab {
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    text-align: center;
+}
+.menu_word{
+    height: 80px;
+}
+.act {
+    display: flex;
+    color: azure;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    height: 100%;
+    text-decoration: none;
+}
+.getinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+    width: 100%;
+}
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgb(235, 151, 50);
+    color: #fff;
+}
+.signup:hover {
+    background: #483ff4;
+    transition: all 0.3s ease;
+}
+.act:hover {
+    color: #483ff4;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 960px) {
+    .Samuel {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        padding: 0;
+    }
+    .menu_tab {
+        display: grid;
+        grid-template-columns: auto;
+        top: -1000;
+        height: 50vh;
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        transition: all 0.3s ease;
+        z-index: -1;
+        opacity: 0;
+        background: rgb(0, 0, 0);
+    }
+    .menu_tab.active {
+        background: black;
+        opacity: 1;
+        top: 100%;
+        z-index: 99;
+        transition: all 0.3s ease;
+        height: 50vh;
+        font-size: 1.6rem;
+    }
+    #Pzion {
+        padding-left: 25px;
+    }
+    .navbar_toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.5s ease;
+        background: #fff;
+        
+    }
+    .menu_word {
+        width: 100%;
+    }
+    .act {
+        text-align: center;
+        padding: 2rem;
+        width: 100px;
+        display: table;
+    }
+    #Menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5% 20%);
+    }
+    .signup {
+        padding-bottom: 2rem;
+        margin-right: 140px;
+    }
+    .act {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0; 
+    }
+    .navbar_toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+    #Menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    #Menu.is-active .bar:nth-child(1) {
+        transform: translate(8px) rotate(45deg);
+    }
+    #Menu.is-active .bar:nth-child(3) {
+        transform: translate(-8px) rotate(-45deg);
+    }
+    
+}
