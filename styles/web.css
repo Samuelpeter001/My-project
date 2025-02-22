@@ -101,18 +101,53 @@ header {
     display: block;
     text-align: center;
     width: 302px;
-    margin-left: 300px;
+    margin-left: 30px;
 }
 .def {
     text-align: center;
     color: brown;
     width: 602px;
     height: auto;
-    margin-left: 150px;
+    margin-left: 50px;
 }
-
+footer {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    height: 14vh;
+    background-color: black;
+    color: #ff0844;
+    font-size: large;
+    font-weight: 700;
+}
+.formfit {
+    justify-content: center;
+    align-items: center;
+    display: block;
+    padding: 180px 70px;
+    background-color: skyblue;
+}
+form div {
+    padding: 10px 20px;
+    color: #1007c4;
+}
+input[type="submit"] {
+    padding: 5px 30px;
+    background-color: rgb(17, 17, 14);
+    color: white;
+}
+.signin {
+    display: flex;
+}
+.signin p {
+    color: black;
+}
+h4 a {
+    text-decoration: none;
+}
 @media screen and (max-width: 460px) {
     body {
+        position: relative;
         display: block;
     }
     .Samuel {
@@ -197,5 +232,8 @@ header {
     #Menu.is-active .bar:nth-child(3) {
         transform: translate(-8px) rotate(-45deg);
     }
-    
+    .description img {
+        width: 460px;
+        height: 300px;
+    }
 }
